@@ -1,0 +1,20 @@
+/*Classes*/
+
+.mainText {
+	float: left;
+	width: 600px;
+	padding: 0px 10px;
+	z-index: 2;
+	position: relative;
+}
+
+/*Ids*/
+
+#aboutImage {
+	float: left;
+	width: 300px;
+	height: 400px;
+	z-index: 2;
+	position: relative;
+	background-image: url('../images/paulBaker.png');
+}

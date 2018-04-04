@@ -1,0 +1,414 @@
+/*Classes*/
+
+#projectsContainerSmall {
+	clear: both;
+	position: relative;
+	width: 920px;
+	margin-top: 60px;
+	display: none;
+    flex-flow: row wrap;
+    justify-content: center;
+	z-index: 1;
+}
+
+#projectsContainerMedium {
+	clear: both;
+	position: relative;
+	width: 920px;
+	margin-top: 60px;
+	/*display: none;*/
+    flex-flow: row wrap;
+    justify-content: center;
+	z-index: 1;	
+}
+
+#projectsContainerLarge {
+	clear: both;
+	position: relative;
+	width: 920px;
+	margin-top: 60px;
+	/*display: flex;*/
+    flex-flow: row wrap;
+    justify-content: center;
+	z-index: 1;	
+}
+
+.portfolioDivLabel {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	padding: 5px 0px;
+}
+
+.titleNarrow {
+	position: absolute;
+	width: 920px;
+	top: 20px;
+	left: 20px;
+}
+
+/*Id*/
+
+#projectLink1Small {
+	height: 167px;
+	width: 250px;
+	margin: 10px;
+	position: relative;
+	background-image: url('../images/projectPlaceHolderSmall.png');
+	background-size: 250px 167px;
+	border-radius: 5px;
+}
+
+#projectLink1Small:hover, #projectLink1Small:focus {
+	height: 177px;
+	width: 260px;
+	border: 4px solid #393F44;
+	padding: 0px;
+	margin: 1px;
+	background-image: url('../images/projectPlaceHolderSmall.png');
+	background-size: 260px 177px;
+}
+
+#projectLink2Small {
+	height: 167px;
+	width: 250px;
+	margin: 10px;
+	position: relative;
+	background-image: url('../images/projectPlaceHolderSmall.png');
+	background-size: 250px 167px;
+	border-radius: 5px;
+}
+
+#projectLink2Small:hover, #projectLink2Small:focus {
+	height: 177px;
+	width: 260px;
+	border: 4px solid #393F44;
+	padding: 0px;
+	margin: 1px;
+	background-image: url('../images/projectPlaceHolderSmall.png');
+	background-size: 260px 177px;
+}
+
+#projectLink3Small {
+	height: 167px;
+	width: 250px;
+	margin: 10px;
+	position: relative;
+	background-image: url('../images/projectPlaceHolderSmall.png');
+	background-size: 250px 167px;
+	border-radius: 5px;
+}
+
+#projectLink3Small:hover, #projectLink3Small:focus {
+	height: 177px;
+	width: 260px;
+	border: 4px solid #393F44;
+	padding: 0px;
+	margin: 1px;
+	background-image: url('../images/projectPlaceHolderSmall.png');
+	background-size: 260px 177px;
+}
+
+#projectLink4Small {
+	height: 167px;
+	width: 250px;
+	margin: 10px;
+	position: relative;
+	background-image: url('../images/projectPlaceHolderSmall.png');
+	background-size: 250px 167px;
+	border-radius: 5px;
+}
+
+#projectLink4Small:hover, #projectLink4Small:focus {
+	height: 177px;
+	width: 260px;
+	border: 4px solid #393F44;
+	padding: 0px;
+	margin: 1px;
+	background-image: url('../images/projectPlaceHolderSmall.png');
+	background-size: 260px 177px;
+}
+
+#projectLink5Small {
+	height: 167px;
+	width: 250px;
+	margin: 10px;
+	position: relative;
+	background-image: url('../images/projectPlaceHolderSmall.png');
+	background-size: 250px 167px;
+	border-radius: 5px;
+}
+
+#projectLink5Small:hover, #projectLink5Small:focus {
+	height: 177px;
+	width: 260px;
+	border: 4px solid #393F44;
+	padding: 0px;
+	margin: 1px;
+	background-image: url('../images/projectPlaceHolderSmall.png');
+	background-size: 260px 177px;
+}
+
+#projectLink1Medium {
+	height: 233px;
+	width: 350px;
+	margin: 10px;
+	position: relative;
+	background-image: url('../images/projectPlaceHolderMedium.png');
+	background-size: 350px 233px;
+	border-radius: 5px;
+}
+
+#projectLink1Medium:hover, #projectLink1Medium:focus {
+	height: 243px;
+	width: 360px;
+	border: 4px solid #393F44;
+	padding: 0px;
+	margin: 1px;
+	background-image: url('../images/projectPlaceHolderMedium.png');
+	background-size: 360px 243px;
+}
+
+#projectLink2Medium {
+	height: 233px;
+	width: 350px;
+	margin: 10px;
+	position: relative;
+	background-image: url('../images/projectPlaceHolderMedium.png');
+	background-size: 350px 233px;
+	border-radius: 5px;
+}
+
+#projectLink2Medium:hover, #projectLink2Medium:focus {
+	height: 243px;
+	width: 360px;
+	border: 4px solid #393F44;
+	padding: 0px;
+	margin: 1px;
+	background-image: url('../images/projectPlaceHolderMedium.png');
+	background-size: 360px 243px;
+}
+
+#projectLink3Medium {
+	height: 233px;
+	width: 350px;
+	margin: 10px;
+	position: relative;
+	background-image: url('../images/projectPlaceHolderMedium.png');
+	background-size: 350px 233px;
+	border-radius: 5px;
+}
+
+#projectLink3Medium:hover, #projectLink3Medium:focus {
+	height: 243px;
+	width: 360px;
+	border: 4px solid #393F44;
+	padding: 0px;
+	margin: 1px;
+	background-image: url('../images/projectPlaceHolderMedium.png');
+	background-size: 360px 243px;
+}
+
+#projectLink4Medium {
+	height: 233px;
+	width: 350px;
+	margin: 10px;
+	position: relative;
+	background-image: url('../images/projectPlaceHolderMedium.png');
+	background-size: 350px 233px;
+	border-radius: 5px;
+}
+
+#projectLink4Medium:hover, #projectLink4Medium:focus {
+	height: 243px;
+	width: 360px;
+	border: 4px solid #393F44;
+	padding: 0px;
+	margin: 1px;
+	background-image: url('../images/projectPlaceHolderMedium.png');
+	background-size: 360px 243px;
+}
+
+#projectLink5Medium {
+	height: 233px;
+	width: 350px;
+	margin: 10px;
+	position: relative;
+	background-image: url('../images/projectPlaceHolderMedium.png');
+	background-size: 350px 233px;
+	border-radius: 5px;
+}
+
+#projectLink5Medium:hover, #projectLink5Medium:focus {
+	height: 243px;
+	width: 360px;
+	border: 4px solid #393F44;
+	padding: 0px;
+	margin: 1px;
+	background-image: url('../images/projectPlaceHolderMedium.png');
+	background-size: 360px 243px;
+}
+
+#projectLink1Large {
+	height: 500px;
+	width: 750px;
+	margin: 10px;
+	position: relative;
+	background-image: url('../images/projectPlaceHolderLarge.png');
+	background-size: 750px 500px;
+	border-radius: 5px;
+}
+
+#projectLink1Large:hover, #projectLink1Large:focus {
+	height: 510px;
+	width: 760px;
+	border: 4px solid #393F44;
+	padding: 0px;
+	margin: 1px;
+	background-image: url('../images/projectPlaceHolderLarge.png');
+	background-size: 760px 510px;
+}
+
+#projectLink2Large {
+	height: 500px;
+	width: 750px;
+	margin: 10px;
+	position: relative;
+	background-image: url('../images/projectPlaceHolderLarge.png');
+	background-size: 750px 500px;
+	border-radius: 5px;
+}
+
+#projectLink2Large:hover, #projectLink2Large:focus {
+	height: 510px;
+	width: 760px;
+	border: 4px solid #393F44;
+	padding: 0px;
+	margin: 1px;
+	background-image: url('../images/projectPlaceHolderLarge.png');
+	background-size: 760px 510px;
+}
+
+#projectLink3Large {
+	height: 500px;
+	width: 750px;
+	margin: 10px;
+	position: relative;
+	background-image: url('../images/projectPlaceHolderLarge.png');
+	background-size: 750px 500px;
+	border-radius: 5px;
+}
+
+#projectLink3Large:hover, #projectLink3Large:focus {
+	height: 510px;
+	width: 760px;
+	border: 4px solid #393F44;
+	padding: 0px;
+	margin: 1px;
+	background-image: url('../images/projectPlaceHolderLarge.png');
+	background-size: 760px 510px;
+}
+
+#projectLink4Large {
+	height: 500px;
+	width: 750px;
+	margin: 10px;
+	position: relative;
+	background-image: url('../images/projectPlaceHolderLarge.png');
+	background-size: 750px 500px;
+	border-radius: 5px;
+}
+
+#projectLink4Large:hover, #projectLink4Large:focus {
+	height: 510px;
+	width: 760px;
+	border: 4px solid #393F44;
+	padding: 0px;
+	margin: 1px;
+	background-image: url('../images/projectPlaceHolderLarge.png');
+	background-size: 760px 510px;
+}
+
+#projectLink5Large {
+	height: 500px;
+	width: 750px;
+	margin: 10px;
+	position: relative;
+	background-image: url('../images/projectPlaceHolderLarge.png');
+	background-size: 750px 500px;
+	border-radius: 5px;
+}
+
+#projectLink5Large:hover, #projectLink5Large:focus {
+	height: 510px;
+	width: 760px;
+	border: 4px solid #393F44;
+	padding: 0px;
+	margin: 1px;
+	background-image: url('../images/projectPlaceHolderLarge.png');
+	background-size: 760px 510px;
+}
+
+#smallIconSize {
+	padding: 0px;
+	margin: 10px;
+	width: 30px;
+	height: 30px;
+	background-image: url('../images/smallIcons.png');
+	position: absolute;
+	top: 5px;
+	right: 100px;
+	border: none;
+    cursor: pointer;
+
+}
+
+#smallIconSize:hover, #smallIconSize:focus ,#smallIconSize:active {
+	width: 34px;
+	height: 34px;
+	top: 3px;
+	right: 98px;
+	background-size: 34px;
+}
+
+#mediumIconSize {
+	padding: 0px;
+	margin: 10px;
+	width: 30px;
+	height: 30px;
+	background-image: url('../images/mediumIcons.png');
+	position: absolute;
+	top: 5px;
+	right: 60px;
+	border: none;
+    cursor: pointer;
+}
+
+#mediumIconSize:hover, #mediumIconSize:focus, #mediumIconSize:active {
+	width: 34px;
+	height: 34px;
+	top: 3px;
+	right: 58px;
+	background-size: 34px;
+}
+
+#largeIconSize {
+	padding: 0px;
+	margin: 10px;
+	width: 30px;
+	height: 30px;
+	background-image: url('../images/largeIcons.png');
+	position: absolute;
+	top: 5px;
+	right: 20px;
+	border: none;
+    cursor: pointer;
+}
+
+#largeIconSize:hover, #largeIconSize:focus, #largeIconSize:active {
+	width: 34px;
+	height: 34px;
+	top: 3px;
+	right: 18px;
+	background-size: 34px;
+}

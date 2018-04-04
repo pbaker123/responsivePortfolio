@@ -1,0 +1,43 @@
+/*Background Colors*/
+
+body, .headerArea, #projectLink1, #projectLink2, #projectLink3, #projectLink4, #projectLink5 {
+	background-color: #777777;
+}
+
+header, .contentArea, .contactFormArea, .contactConnectArea, #connectGithub:hover, #connectGithub:active, #connectGithub:focus, #connectLinkedin:hover, #connectLinkedin:active, #connectLinkedin:focus, #connectStackoverflow:hover, #connectStackoverflow:active, #connectStackoverflow:focus {
+	background-color: #FFFFFF;
+}
+
+footer {
+	background-color: #666666;
+}
+
+li a:hover, li a:active, li a:focus, input[type=submit]:hover, input[type=submit]:active, input[type=submit]:focus {
+	background-color: #393F44;
+}
+
+input[type=submit], .portfolioTitle, .portfolioDivLabel {
+	background-color: #4AAAA5;
+}
+
+
+/*Text Colors*/
+
+body, h4, h5, li a:link, li a:visited, input[type="text"], input[type="email"], textarea, textarea:focus {
+	color: #777777;
+}
+
+
+h2, h3 {
+	color: #4AAAA5;
+}
+
+h1, li a:hover, li a:active, li a:focus, input[type=submit], .footerText, .active, .portfolioDivLabel {
+	color: #FFFFFF;
+}
+
+.active {
+	color: #FFFFFF !important;
+	background-color: #4AAAA5 !important;
+	cursor: default;
+}

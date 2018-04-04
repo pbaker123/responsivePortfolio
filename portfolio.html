@@ -1,0 +1,196 @@
+<!-- Portfolio -->
+
+<!DOCTYPE html>
+
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			View My Work
+		</title>
+	
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	    <link rel="manifest" href="/site.webmanifest">
+	    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4aaaa5">
+	    <meta name="msapplication-TileColor" content="#4aaaa5">
+	    <meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/color.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/font.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/portfolio.css">
+
+	</head>
+	<body>
+		
+		<header>
+			<!-- Navigation bar area -->
+			<div class="headerArea">
+				<a href="https://pbaker123.github.io/" target="_blank">
+					<div class="portfolioTitle" title="View My Website">
+					<!-- Blue title section -->
+						<h1 class="verticalCenter">
+							Paul Baker
+						</h1>
+					</div>
+				</a>
+				<nav class="portfolioNavigation">
+					<!-- Navigation links -->
+					<ul>
+						<li title="Connect with me"><a href="contact.html" tabindex="3">Contact</a></li>
+						<li title="View my work"><a class="active" href="portfolio.html">Portfolio</a></li>
+						<li title="Learn about me"><a href="index.html" tabindex="1">About</a></li>
+					</ul>
+				</nav>	
+			</div>
+		</header>
+
+		<section>
+			<!-- Main body area -->
+			<div class="contentArea">
+				<!-- <div class="clearFix"> -->
+					<h2 class="titleNarrow">
+						Portfolio
+					</h2>
+					<button onclick="
+						document.getElementById('projectsContainerSmall').style.display='flex';
+						document.getElementById('projectsContainerMedium').style.display='none';					
+						document.getElementById('projectsContainerLarge').style.display='none';
+						document.getElementById('smallIconSize').style.opacity='1';
+						document.getElementById('mediumIconSize').style.opacity='.2';
+						document.getElementById('largeIconSize').style.opacity='.2';
+						document.getElementById('smallIconSize').style.cursor='auto';
+						document.getElementById('mediumIconSize').style.cursor='pointer';
+						document.getElementById('largeIconSize').style.cursor='pointer'" 
+						id="smallIconSize" title="Small" style="opacity:.2" tabindex="9">
+					</button>
+					<button onclick="
+						document.getElementById('projectsContainerSmall').style.display='none'
+						document.getElementById('projectsContainerMedium').style.display='flex';
+						document.getElementById('projectsContainerLarge').style.display='none';
+						document.getElementById('smallIconSize').style.opacity='.2';
+						document.getElementById('mediumIconSize').style.opacity='1';
+						document.getElementById('largeIconSize').style.opacity='.2';
+						document.getElementById('smallIconSize').style.cursor='pointer';
+						document.getElementById('mediumIconSize').style.cursor='auto';
+						document.getElementById('largeIconSize').style.cursor='pointer'"
+						id="mediumIconSize" title="Medium" style="cursor: auto" tabindex="10">
+					</button>
+					<button onclick="
+						document.getElementById('projectsContainerSmall').style.display='none'
+						document.getElementById('projectsContainerMedium').style.display='none';
+						document.getElementById('projectsContainerLarge').style.display='flex';
+						document.getElementById('smallIconSize').style.opacity='.2';
+						document.getElementById('mediumIconSize').style.opacity='.2';
+						document.getElementById('largeIconSize').style.opacity='1';
+						document.getElementById('smallIconSize').style.cursor='pointer';
+						document.getElementById('mediumIconSize').style.cursor='pointer';
+						document.getElementById('largeIconSize').style.cursor='auto'" 
+						id="largeIconSize" title="Large" style="opacity:.2" tabindex="11">
+						</button>
+				<!-- </div> -->
+
+					<div id="projectsContainerSmall" style="display:none">
+						<!-- Flex container for small project links -->
+						<a href="#" id="projectLink1Small" title="Project 1" tabindex="4">
+							<div class="portfolioDivLabel">
+								Project 1 Placeholder
+							</div>
+						</a>
+						<a href="#" id="projectLink2Small" title="Project 2" tabindex="5">
+							<div class="portfolioDivLabel">
+								Project 2 Placeholder
+							</div>
+						</a>
+						<a href="#" id="projectLink3Small" title="Project 3" tabindex="6">
+							<div class="portfolioDivLabel">
+								Project 3 Placeholder
+							</div>
+						</a>
+						<a href="#" id="projectLink4Small" title="Project 4" tabindex="7">
+							<div class="portfolioDivLabel">
+								Project 4 Placeholder
+							</div>
+						</a>
+						<a href="#" id="projectLink5Small" title="Project 5" tabindex="8">
+							<div class="portfolioDivLabel">
+								Project 5 Placeholder
+							</div>
+						</a>
+					</div>
+
+					<div id="projectsContainerMedium" style="display:flex">
+						<!-- Flex container for medium project links -->
+						<a href="#" id="projectLink1Medium" title="Project 1" tabindex="4">
+							<div class="portfolioDivLabel">
+								Project 1 Placeholder
+							</div>
+						</a>
+						<a href="#" id="projectLink2Medium" title="Project 2" tabindex="5">
+							<div class="portfolioDivLabel">
+								Project 2 Placeholder
+							</div>
+						</a>
+						<a href="#" id="projectLink3Medium" title="Project 3" tabindex="6">
+							<div class="portfolioDivLabel">
+								Project 3 Placeholder
+							</div>
+						</a>
+						<a href="#" id="projectLink4Medium" title="Project 4" tabindex="7">
+							<div class="portfolioDivLabel">
+								Project 4 Placeholder
+							</div>
+						</a>
+						<a href="#" id="projectLink5Medium" title="Project 5" tabindex="8">
+							<div class="portfolioDivLabel">
+								Project 5 Placeholder
+							</div>
+						</a>
+					</div>
+
+					
+					<div id="projectsContainerLarge" style="display:none">
+						<!-- Flex container for large project links -->
+						<a href="#" id="projectLink1Large" title="Project 1" tabindex="4">
+							<div class="portfolioDivLabel">
+								Project 1 Placeholder
+							</div>
+						</a>
+						<a href="#" id="projectLink2Large" title="Project 1" tabindex="4">
+							<div class="portfolioDivLabel">
+								Project 1 Placeholder
+							</div>
+						</a>
+						<a href="#" id="projectLink3Large" title="Project 3" tabindex="6">
+							<div class="portfolioDivLabel">
+								Project 3 Placeholder
+							</div>
+						</a>
+						<a href="#" id="projectLink4Large" title="Project 4" tabindex="7">
+							<div class="portfolioDivLabel">
+								Project 4 Placeholder
+							</div>
+						</a>
+						<a href="#" id="projectLink5Large" title="Project 5" tabindex="8">
+							<div class="portfolioDivLabel">
+								Project 5 Placeholder
+							</div>
+						</a>
+					</div>
+										
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<!-- Footer Area -->
+			<div class="footerLogo"></div>
+			<p class="footerText">
+				Copyright &copy; 2018
+			</p>
+		</footer>
+	
+	</body>
+</html>
