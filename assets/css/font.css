@@ -12,23 +12,28 @@ h1, h2, h3 {
 /*Font Size*/
 
 h1 {
-	font-size: 30px;
+	/*font-size: 30px;*/
+	font-size: 1.7857142857142856vw;
 }
 
 h2, h5, li a, input[type=submit] {
-	font-size: 20px;
+	/*font-size: 20px;*/
+	font-size: 1.1904761904761905vw;
 }
 
 h3, h4 {
-	font-size: 18px;
+	/*font-size: 18px;*/
+	font-size: 1.0714285714285714vw;
 }
 
 body {
-	font-size: 16px;
+	/*font-size: 16px;*/
+	font-size: 0.9523809523809523vw;
 }
 
 .footerText {
-	font-size: 12px;
+	/*font-size: 12px;*/
+	font-size: 0.7142857142857143vw;
 }
 
 /*Text Adjustments*/
