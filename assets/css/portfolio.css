@@ -1,5 +1,21 @@
 /*Classes*/
 
+.portfolioDivLabel {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	padding: 5px 0px;
+}
+
+.titleNarrow {
+	position: absolute;
+	width: 920px;
+	top: 20px;
+	left: 20px;
+}
+
+/*Id*/
+
 #projectsContainerSmall {
 	clear: both;
 	position: relative;
@@ -33,320 +49,289 @@
 	z-index: 1;	
 }
 
-.portfolioDivLabel {
-	position: absolute;
-	bottom: 20px;
-	width: 100%;
-	padding: 5px 0px;
-}
-
-.titleNarrow {
-	position: absolute;
-	width: 920px;
-	top: 20px;
-	left: 20px;
-}
-
-/*Id*/
-
 #projectLink1Small {
-	height: 167px;
-	width: 250px;
+	height: 187px;
+	width: 280px;
 	margin: 10px;
 	position: relative;
 	background-image: url('../images/projectPlaceHolderSmall.png');
-	background-size: 250px 167px;
+	background-size: 280px 187px;
 	border-radius: 5px;
 }
 
 #projectLink1Small:hover, #projectLink1Small:focus {
-	height: 177px;
-	width: 260px;
+	height: 197px;
+	width: 290px;
 	border: 4px solid #393F44;
 	padding: 0px;
 	margin: 1px;
-	background-image: url('../images/projectPlaceHolderSmall.png');
-	background-size: 260px 177px;
+	background-size: 290px 197px;
 }
 
 #projectLink2Small {
-	height: 167px;
-	width: 250px;
+	height: 187px;
+	width: 280px;
 	margin: 10px;
 	position: relative;
 	background-image: url('../images/projectPlaceHolderSmall.png');
-	background-size: 250px 167px;
+	background-size: 280px 187px;
 	border-radius: 5px;
 }
 
 #projectLink2Small:hover, #projectLink2Small:focus {
-	height: 177px;
-	width: 260px;
+	height: 197px;
+	width: 290px;
 	border: 4px solid #393F44;
 	padding: 0px;
 	margin: 1px;
-	background-image: url('../images/projectPlaceHolderSmall.png');
-	background-size: 260px 177px;
+	background-size: 290px 197px;
 }
 
 #projectLink3Small {
-	height: 167px;
-	width: 250px;
+	height: 187px;
+	width: 280px;
 	margin: 10px;
 	position: relative;
 	background-image: url('../images/projectPlaceHolderSmall.png');
-	background-size: 250px 167px;
+	background-size: 280px 187px;
 	border-radius: 5px;
 }
 
 #projectLink3Small:hover, #projectLink3Small:focus {
-	height: 177px;
-	width: 260px;
+	height: 197px;
+	width: 290px;
 	border: 4px solid #393F44;
 	padding: 0px;
 	margin: 1px;
-	background-image: url('../images/projectPlaceHolderSmall.png');
-	background-size: 260px 177px;
+	background-size: 290px 197px;
 }
 
 #projectLink4Small {
-	height: 167px;
-	width: 250px;
+	height: 187px;
+	width: 280px;
 	margin: 10px;
 	position: relative;
 	background-image: url('../images/projectPlaceHolderSmall.png');
-	background-size: 250px 167px;
+	background-size: 280px 187px;
 	border-radius: 5px;
 }
 
 #projectLink4Small:hover, #projectLink4Small:focus {
-	height: 177px;
-	width: 260px;
+	height: 197px;
+	width: 290px;
 	border: 4px solid #393F44;
 	padding: 0px;
 	margin: 1px;
-	background-image: url('../images/projectPlaceHolderSmall.png');
-	background-size: 260px 177px;
+	background-size: 290px 197px;
 }
 
 #projectLink5Small {
-	height: 167px;
-	width: 250px;
+	height: 187px;
+	width: 280px;
 	margin: 10px;
 	position: relative;
 	background-image: url('../images/projectPlaceHolderSmall.png');
-	background-size: 250px 167px;
+	background-size: 280px 187px;
 	border-radius: 5px;
 }
 
 #projectLink5Small:hover, #projectLink5Small:focus {
-	height: 177px;
-	width: 260px;
+	height: 197px;
+	width: 290px;
 	border: 4px solid #393F44;
 	padding: 0px;
 	margin: 1px;
-	background-image: url('../images/projectPlaceHolderSmall.png');
-	background-size: 260px 177px;
+	background-size: 290px 197px;
 }
 
 #projectLink1Medium {
-	height: 233px;
-	width: 350px;
+	height: 292px;
+	width: 438px;
 	margin: 10px;
 	position: relative;
 	background-image: url('../images/projectPlaceHolderMedium.png');
-	background-size: 350px 233px;
+	background-size: 438px 292px;
 	border-radius: 5px;
 }
 
 #projectLink1Medium:hover, #projectLink1Medium:focus {
-	height: 243px;
-	width: 360px;
+	height: 302px;
+	width: 448px;
 	border: 4px solid #393F44;
 	padding: 0px;
 	margin: 1px;
-	background-image: url('../images/projectPlaceHolderMedium.png');
-	background-size: 360px 243px;
+	background-size: 448px 302px;
 }
 
 #projectLink2Medium {
-	height: 233px;
-	width: 350px;
+	height: 292px;
+	width: 438px;
 	margin: 10px;
 	position: relative;
 	background-image: url('../images/projectPlaceHolderMedium.png');
-	background-size: 350px 233px;
+	background-size: 438px 292px;
 	border-radius: 5px;
 }
 
 #projectLink2Medium:hover, #projectLink2Medium:focus {
-	height: 243px;
-	width: 360px;
+	height: 302px;
+	width: 448px;
 	border: 4px solid #393F44;
 	padding: 0px;
 	margin: 1px;
-	background-image: url('../images/projectPlaceHolderMedium.png');
-	background-size: 360px 243px;
+	background-size: 448px 302px;
 }
 
 #projectLink3Medium {
-	height: 233px;
-	width: 350px;
+	height: 292px;
+	width: 438px;
 	margin: 10px;
 	position: relative;
 	background-image: url('../images/projectPlaceHolderMedium.png');
-	background-size: 350px 233px;
+	background-size: 438px 292px;
 	border-radius: 5px;
 }
 
 #projectLink3Medium:hover, #projectLink3Medium:focus {
-	height: 243px;
-	width: 360px;
+	height: 302px;
+	width: 448px;
 	border: 4px solid #393F44;
 	padding: 0px;
 	margin: 1px;
-	background-image: url('../images/projectPlaceHolderMedium.png');
-	background-size: 360px 243px;
+	background-size: 448px 302px;
 }
 
 #projectLink4Medium {
-	height: 233px;
-	width: 350px;
+	height: 292px;
+	width: 438px;
 	margin: 10px;
 	position: relative;
 	background-image: url('../images/projectPlaceHolderMedium.png');
-	background-size: 350px 233px;
+	background-size: 438px 292px;
 	border-radius: 5px;
 }
 
 #projectLink4Medium:hover, #projectLink4Medium:focus {
-	height: 243px;
-	width: 360px;
+	height: 302px;
+	width: 448px;
 	border: 4px solid #393F44;
 	padding: 0px;
 	margin: 1px;
-	background-image: url('../images/projectPlaceHolderMedium.png');
-	background-size: 360px 243px;
+	background-size: 448px 302px;
 }
 
 #projectLink5Medium {
-	height: 233px;
-	width: 350px;
+	height: 292px;
+	width: 438px;
 	margin: 10px;
 	position: relative;
 	background-image: url('../images/projectPlaceHolderMedium.png');
-	background-size: 350px 233px;
+	background-size: 438px 292px;
 	border-radius: 5px;
 }
 
 #projectLink5Medium:hover, #projectLink5Medium:focus {
-	height: 243px;
-	width: 360px;
+	height: 302px;
+	width: 448px;
 	border: 4px solid #393F44;
 	padding: 0px;
 	margin: 1px;
-	background-image: url('../images/projectPlaceHolderMedium.png');
-	background-size: 360px 243px;
+	background-size: 448px 302px;
 }
 
 #projectLink1Large {
-	height: 500px;
-	width: 750px;
+	height: 587px;
+	width: 880px;
 	margin: 10px;
 	position: relative;
 	background-image: url('../images/projectPlaceHolderLarge.png');
-	background-size: 750px 500px;
+	background-size: 880px 587px;
 	border-radius: 5px;
 }
 
 #projectLink1Large:hover, #projectLink1Large:focus {
-	height: 510px;
-	width: 760px;
+	height: 597px;
+	width: 890px;
 	border: 4px solid #393F44;
 	padding: 0px;
 	margin: 1px;
-	background-image: url('../images/projectPlaceHolderLarge.png');
-	background-size: 760px 510px;
+	background-size: 890px 597px;
 }
 
 #projectLink2Large {
-	height: 500px;
-	width: 750px;
+	height: 587px;
+	width: 880px;
 	margin: 10px;
 	position: relative;
 	background-image: url('../images/projectPlaceHolderLarge.png');
-	background-size: 750px 500px;
+	background-size: 880px 587px;
 	border-radius: 5px;
 }
 
 #projectLink2Large:hover, #projectLink2Large:focus {
-	height: 510px;
-	width: 760px;
+	height: 597px;
+	width: 890px;
 	border: 4px solid #393F44;
 	padding: 0px;
 	margin: 1px;
-	background-image: url('../images/projectPlaceHolderLarge.png');
-	background-size: 760px 510px;
+	background-size: 890px 597px;
 }
 
 #projectLink3Large {
-	height: 500px;
-	width: 750px;
+	height: 587px;
+	width: 880px;
 	margin: 10px;
 	position: relative;
 	background-image: url('../images/projectPlaceHolderLarge.png');
-	background-size: 750px 500px;
+	background-size: 880px 587px;
 	border-radius: 5px;
 }
 
 #projectLink3Large:hover, #projectLink3Large:focus {
-	height: 510px;
-	width: 760px;
+	height: 597px;
+	width: 890px;
 	border: 4px solid #393F44;
 	padding: 0px;
 	margin: 1px;
-	background-image: url('../images/projectPlaceHolderLarge.png');
-	background-size: 760px 510px;
+	background-size: 890px 597px;
 }
 
 #projectLink4Large {
-	height: 500px;
-	width: 750px;
+	height: 587px;
+	width: 880px;
 	margin: 10px;
 	position: relative;
 	background-image: url('../images/projectPlaceHolderLarge.png');
-	background-size: 750px 500px;
+	background-size: 880px 587px;
 	border-radius: 5px;
 }
 
 #projectLink4Large:hover, #projectLink4Large:focus {
-	height: 510px;
-	width: 760px;
+	height: 597px;
+	width: 890px;
 	border: 4px solid #393F44;
 	padding: 0px;
 	margin: 1px;
-	background-image: url('../images/projectPlaceHolderLarge.png');
-	background-size: 760px 510px;
+	background-size: 890px 597px;
 }
 
 #projectLink5Large {
-	height: 500px;
-	width: 750px;
+	height: 587px;
+	width: 880px;
 	margin: 10px;
 	position: relative;
 	background-image: url('../images/projectPlaceHolderLarge.png');
-	background-size: 750px 500px;
+	background-size: 880px 587px;
 	border-radius: 5px;
 }
 
 #projectLink5Large:hover, #projectLink5Large:focus {
-	height: 510px;
-	width: 760px;
+	height: 597px;
+	width: 890px;
 	border: 4px solid #393F44;
 	padding: 0px;
 	margin: 1px;
-	background-image: url('../images/projectPlaceHolderLarge.png');
-	background-size: 760px 510px;
+	background-size: 890px 597px;
 }
 
 #smallIconSize {
