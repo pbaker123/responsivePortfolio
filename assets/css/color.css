@@ -1,43 +1,59 @@
-/*Background Colors*/
-
-body, .headerArea, #projectLink1, #projectLink2, #projectLink3, #projectLink4, #projectLink5 {
-	background-color: #777777;
-}
-
-header, .contentArea, .contactFormArea, .contactConnectArea, #connectGithub:hover, #connectGithub:active, #connectGithub:focus, #connectLinkedin:hover, #connectLinkedin:active, #connectLinkedin:focus, #connectStackoverflow:hover, #connectStackoverflow:active, #connectStackoverflow:focus {
-	background-color: #FFFFFF;
-}
-
+/* Background Colors */
 footer {
-	background-color: #666666;
+	background-color: #a98f6a;
 }
 
-li a:hover, li a:active, li a:focus, input[type=submit]:hover, input[type=submit]:active, input[type=submit]:focus {
-	background-color: #393F44;
+button {
+	background-color: unset;
 }
 
-input[type=submit], .portfolioTitle, .portfolioDivLabel {
-	background-color: #4AAAA5;
-}
-
-
-/*Text Colors*/
-
-body, h4, h5, li a:link, li a:visited, input[type="text"], input[type="email"], textarea, textarea:focus {
-	color: #777777;
+.currentpage, .bg-darkolivegreen {
+	background-color: #725342 !important;
 }
 
 
-h2, h3 {
-	color: #4AAAA5;
+.main-item-content, .main-item-connect, .header-grid-container, .bg-snow {
+	background-color: #FDFCFA;
 }
 
-h1, li a:hover, li a:active, li a:focus, input[type=submit], .footerText, .active, .portfolioDivLabel {
-	color: #FFFFFF;
+.dropdown-content {
+    background-color: #E3E3E1;
 }
 
-.active {
-	color: #FFFFFF !important;
-	background-color: #4AAAA5 !important;
-	cursor: default;
+.link:hover, .link:focus, .link:active, .splitlinkprimary:hover, .splitlinkprimary:focus, .splitlinkprimary:active, .splitlinksecondary:hover {
+	background-color: #a98f6a;
+}
+
+.splitlinksecondary:focus, .splitlinksecondary:active {
+	background-color: #725342;
+}
+
+
+/* Text Colors */
+body {
+	color: #233333;
+}
+
+h2, h3, h4, .text-darkolivegreen {
+	color: #725342;
+}
+
+.link, .text-maincolor, .splitlinksecondary {
+	color: #4E7271;
+}
+
+.text-snow {
+	color: #FDFCFA;
+}
+
+.text-rosybrown {
+	color: #BFA395;
+}
+
+.currentpage, .link:hover, .link:focus, .link:active {
+	color: #FDFCFA !important;
+}
+
+.splitlinkprimary:hover, .splitlinkprimary:focus, .splitlinkprimary:active, .splitlinksecondary:hover, .splitlinksecondary:focus, .splitlinksecondary:active {
+	color: #FDFCFA;
 }

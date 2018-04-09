@@ -66,103 +66,206 @@
 			rel="stylesheet" 
 			type="text/css" 
 			>
-		<link 
-			href="assets/css/index.css"
-			rel="stylesheet" 
-			type="text/css" 
-			>
+		
 	</head>
 	<body>
 		
-		<header>
-			<!-- Navigation bar area -->
-			<div class="headerArea">
-				<a 
-					href="https://pbaker123.github.io/" 
-					target="_blank"
-					>
-					<div 
-						class="portfolioTitle" 
-						title="View My Website"
-						>
-					<!-- Blue title section -->
-						<h1 class="verticalCenter">
-							Paul Baker
-						</h1>
-					</div>
-				</a>
-				<nav class="portfolioNavigation">
-					<!-- Navigation links -->
-					<ul>
-						<li title="Connect with me">
-							<a 
-								href="contact.html" 
-								tabindex="3"
-								>
-								Contact
-							</a>
-						</li>
-						<li title="View my work">
-							<a 
-								href="portfolio.html"
-								tabindex="2"
-								>
-								Portfolio
-							</a>
-						</li>
-						<li title="Learn about me">
-							<a 
-								class="active" 
-								href="index.html" 
-								tabindex="-1"
-								>
-								About
-							</a>
-						</li>
-					</ul>
-				</nav>	
+	<header class="bg-snow border-bottom"> 
+		<div class="header-grid-container">
+			<div class="header-item-name  bg-darkolivegreen text-snow rounded">
+				<h1 class="extrapadding text-center">
+					Paul Baker
+				</h1>
 			</div>
-		</header>
-
-		<section>
-			<!-- Main body area -->
-			<div class="contentArea">
-				<div class="clearFix">
-					<h2>
-						About Me
-					</h2>
-					<figure 
-						id="aboutImage" 
-						title="Paul Baker"
-						>
-					</figure>
-					<article class="mainText">
-						<h5>
-							A little about myself . . .
-						</h5>	
-						<p>
-							I began my career as a manager at a quick serve restaurant chain called Zaxby’s.  This allowed me to pay my way through college, and I graduated with a Bachelor’s degree in Managerial Sciences.  At that time, the job market was fairly soft, so I was fortunate to have a friend that needed an additional temporary worker at Toshiba.  I’ve now been with Toshiba for nine years, and the company has morphed and merged several times, which led me to picking up new skills and learning to navigate whatever situation is thrown at me.  Currently, I am working on Education for the self-checkout line of products.  <!-- I'm now looking for a new company that really challenges me in full-stack web development. -->
-						</p>
-						<p>
-							I recently relocated to Austin from Atlanta in August 2017 with my wife who I am happily married to.  We had been looking for a change when my sister-in-law moved to Austin.  We visited and decided that we were going to go for it and have never looked back!  We are loving every moment and our motto is "Live Your Best Life!"  We do not have any children, but we do have a 15 year old Miniature American Eskimo Dog-ter, Minnie. 
-						</p>
-						<p>
-							My brother-in-law and I recently purchased a 1984 S2 6.9 sailboat that I love to fix up on the weekends.  We are currently retrofitting her for a more modern look and can't wait until we can sail on Lake Travis!  I have also picked up pilates, yoga, and hiking with my friends and family and love to be outside whenever I can.  One of my life long passions is soccer, and I have played since I was 8 years old.  I love to watch games and play when I can. 
-						</p>
-					</article>
+			
+			<div class="header-item-nav-1">
+				<div class="header-item-nav-flex">
+					<a 
+						class="link rounded currentpage"
+						href="index.html"
+		  				>
+		  					<h5>
+								About
+							</h5>							
+						
+					</a>
+				</div>
+				
+			</div>
+			<div class="header-item-nav-2">
+				<div class="header-item-nav-flex">
+					<a 
+						class="link rounded"
+						href="index.html"
+		  				>
+		  					<h5>
+								Portfolio
+							</h5>							
+						
+					</a>
+				</div>
+				
+			</div>
+			<div class="header-item-nav-3">
+				<div class="header-item-nav-flex">
+					<a 
+						class="text-maincolor splitlinkprimary"
+						href="index.html"
+		  				>
+		  				
+			  				<h5>
+								Contact
+							</h5>							
+						
+					</a>
+					
+					<button class="splitlinksecondary" tabindex="5">
+						<div class="dropdown">
+							<h5>
+		  					&#9660;
+		  					<h5>
+							<div class="dropdown-content">
+								<h4 class="text-maincolor content-border-bottom">
+									Connect with me
+								</h4>
+								<!-- First social media link -->
+								<div class="socialSmallContainer">
+									<a 
+										href="https://github.com/pbaker123"
+										tabindex="6"
+										target="_blank" 
+										>
+										<div class="gitHubSmallLink">
+										</div>
+									</a>
+							
+									<!-- Second social media link -->
+									<a
+										href="https://www.linkedin.com/in/paul-baker-03202b31/"
+										tabindex="7" 
+										target="_blank"
+										>
+										<div class="linkedinSmallLink">
+										</div>
+									</a>
+							
+									<!-- Third social media link -->
+									<a 
+										href="https://stackoverflow.com/users/9519126/paul-baker" 
+										tabindex="8"
+										target="_blank"
+										>
+										<div class="stackSmallLink">
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</button>
 				</div>
 			</div>
-		</section>
-
-		<footer>
-			<!-- Footer Area -->
-			<div class="footerLogo">
+			<div class="header-item-nav-4">
+				<div class="header-item-nav-flex">
+					<a 
+						class="link rounded"
+						href="index.html"
+		  				>
+		  					<h5>
+								Contact
+							</h5>							
+						
+					</a>
+				</div>
 			</div>
-			<p class="footerText">
-				Copyright &copy; 2018
-			</p>
-		</footer>
-	
+		</div>
+	</header>
+
+	<main>
+		<div class="main-grid-container">
+			<div class="main-item-content">
+				<div class="main-item-flex">
+					<h2 class="content-border-bottom">
+						About me
+					</h2>
+					<img src="assets/images/paulBaker.png" id="paulBaker">
+					<h5>
+						A little about myself . . .
+					</h5>	
+					<p>
+						I began my career as a manager at a quick serve restaurant chain called Zaxby’s.  This allowed me to pay my way through college, and I graduated with a Bachelor’s degree in Managerial Sciences.  At that time, the job market was fairly soft, so I was fortunate to have a friend that needed an additional temporary worker at Toshiba.  I’ve now been with Toshiba for nine years, and the company has morphed and merged several times, which led me to picking up new skills and learning to navigate whatever situation is thrown at me.  Currently, I am working on Education for the self-checkout line of products.  <!-- I'm now looking for a new company that really challenges me in full-stack web development. -->
+					</p>
+					<p>
+						I recently relocated to Austin from Atlanta in August 2017 with my wife who I am happily married to.  We had been looking for a change when my sister-in-law moved to Austin.  We visited and decided that we were going to go for it and have never looked back!  We are loving every moment and our motto is "Live Your Best Life!"  We do not have any children, but we do have a 15 year old Miniature American Eskimo Dog-ter, Minnie. 
+					</p>
+					<p>
+						My brother-in-law and I recently purchased a 1984 S2 6.9 sailboat that I love to fix up on the weekends.  We are currently retrofitting her for a more modern look and can't wait until we can sail on Lake Travis!  I have also picked up pilates, yoga, and hiking with my friends and family and love to be outside whenever I can.  One of my life long passions is soccer, and I have played since I was 8 years old.  I love to watch games and play when I can. 
+					</p>
+				</div>
+			</div>
+			<div class="main-item-connect">
+				<h3 class="content-border-bottom">
+					Connect with me
+				</h3>
+					<div class="element-center">
+				<!-- First social media link -->
+				<a 
+					
+					href="https://github.com/pbaker123" 
+					target="_blank"
+					>
+					<div class="gitHubLink">
+					</div>
+				</a>
+		
+				<!-- Second social media link -->
+				<a
+					
+					href="https://www.linkedin.com/in/paul-baker-03202b31/"
+					target="_blank" 
+					>
+					<div class="linkedinLink">
+					</div>
+				</a>
+		
+				<!-- Third social media link -->
+				<a 
+					
+					href="https://stackoverflow.com/users/9519126/paul-baker" 
+					target="_blank"
+					>
+						<div class="stackLink">
+						</div>
+				</a>
+			</div>
+			</div>
+
+
+
+		</div>
+
+
+
+	</main>
+
+	<!-- Sticky Footer -->
+		<footer>
+      		<div class="container">
+        		<div class="row">
+        			<div class="col-sm-12">
+        				<div class="text-center">
+        					<img src="assets/images/pbd-sm.png">
+        				</div>
+        			</div>
+        			<div class="col-sm-12">
+        				<div class="text-center text-snow">
+        					<small>
+        						Copyright &copy; 2018
+        					</small>
+        				</div>
+        			</div>
+        		</div>
+      		</div>
+    	</footer>
+		
 	</body>
 </html>
-
