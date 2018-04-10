@@ -1,5 +1,5 @@
 /* Background Colors */
-footer {
+footer, .portfolioDivLabel {
 	background-color: #A98f6A;
 }
 
@@ -46,7 +46,7 @@ h2, h3, h4, .text-darkolivegreen {
 	color: #4E7271;
 }
 
-.text-snow {
+.text-snow, .portfolioDivLabel {
 	color: #FDFCFA;
 }
 

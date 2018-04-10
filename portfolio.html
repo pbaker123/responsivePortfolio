@@ -69,6 +69,11 @@
 			rel="stylesheet" 
 			type="text/css" 
 			>
+		<link 
+			href="assets/css/portfolio.css"
+			rel="stylesheet" 
+			type="text/css" 
+			>
 		
 	</head>
 	<body>
@@ -197,60 +202,70 @@
 				<!-- Main content area -->
 				<div class="main-item-content">
 					<div class="main-item-flex">
-						<h2 class="content-border-bottom">
-							Portfolio
-						</h2>
-						<button 
-						id="smallIconSize" 
-						onclick="
-							document.getElementById('projectsContainerSmall').style.display='flex';
-							document.getElementById('projectsContainerMedium').style.display='none';					
-							document.getElementById('projectsContainerLarge').style.display='none';
-							document.getElementById('smallIconSize').style.opacity='1';
-							document.getElementById('mediumIconSize').style.opacity='.2';
-							document.getElementById('largeIconSize').style.opacity='.2';
-							document.getElementById('smallIconSize').style.cursor='auto';
-							document.getElementById('mediumIconSize').style.cursor='pointer';
-							document.getElementById('largeIconSize').style.cursor='pointer'" 
-						style="opacity:.2"
-						tabindex="9"
-						title="Small"  
-						>
-					</button>
-					<button 
-						id="mediumIconSize" 
-						onclick="
-							document.getElementById('projectsContainerSmall').style.display='none';
-							document.getElementById('projectsContainerMedium').style.display='flex';
-							document.getElementById('projectsContainerLarge').style.display='none';
-							document.getElementById('smallIconSize').style.opacity='.2';
-							document.getElementById('mediumIconSize').style.opacity='1';
-							document.getElementById('largeIconSize').style.opacity='.2';
-							document.getElementById('smallIconSize').style.cursor='pointer';
-							document.getElementById('mediumIconSize').style.cursor='auto';
-							document.getElementById('largeIconSize').style.cursor='pointer'"
-						style="cursor: auto" 
-						tabindex="10"
-						title="Medium" 
-						>
-					</button>
-					<button 
-						id="largeIconSize" 
-						onclick="
-							document.getElementById('projectsContainerSmall').style.display='none';
-							document.getElementById('projectsContainerMedium').style.display='none';
-							document.getElementById('projectsContainerLarge').style.display='flex';
-							document.getElementById('smallIconSize').style.opacity='.2';
-							document.getElementById('mediumIconSize').style.opacity='.2';
-							document.getElementById('largeIconSize').style.opacity='1';
-							document.getElementById('smallIconSize').style.cursor='pointer';
-							document.getElementById('mediumIconSize').style.cursor='pointer';
-							document.getElementById('largeIconSize').style.cursor='auto'" 
-						style="opacity:.2" 
-						tabindex="11"
-						title="Large" 
-						>
-					</button>
+						<div class="content-title-grid">
+							<div class="title-grid">
+								<h2>
+									Portfolio
+								</h2>
+							</div>
+							<div class="button1-grid">
+								<div 
+									id="smallIconSize" 
+									onclick="
+										document.getElementById('projectsContainerSmall').style.display='flex';
+										document.getElementById('projectsContainerMedium').style.display='none';					
+										document.getElementById('projectsContainerLarge').style.display='none';
+										document.getElementById('smallIconSize').style.opacity='1';
+										document.getElementById('mediumIconSize').style.opacity='.2';
+										document.getElementById('largeIconSize').style.opacity='.2';
+										document.getElementById('smallIconSize').style.cursor='auto';
+										document.getElementById('mediumIconSize').style.cursor='pointer';
+										document.getElementById('largeIconSize').style.cursor='pointer'" 
+									style="opacity:.2"
+									tabindex="9"
+									title="Small"  
+									>
+								</div>
+							</div>
+							<div class="button2-grid">
+								<div 
+									id="mediumIconSize" 
+									onclick="
+										document.getElementById('projectsContainerSmall').style.display='none';
+										document.getElementById('projectsContainerMedium').style.display='flex';
+										document.getElementById('projectsContainerLarge').style.display='none';
+										document.getElementById('smallIconSize').style.opacity='.2';
+										document.getElementById('mediumIconSize').style.opacity='1';
+										document.getElementById('largeIconSize').style.opacity='.2';
+										document.getElementById('smallIconSize').style.cursor='pointer';
+										document.getElementById('mediumIconSize').style.cursor='auto';
+										document.getElementById('largeIconSize').style.cursor='pointer'"
+									style="cursor: auto" 
+									tabindex="10"
+									title="Medium" 
+									>
+								</div>
+							</div>
+							<div class="button3-grid">
+								<div 
+									id="largeIconSize" 
+									onclick="
+										document.getElementById('projectsContainerSmall').style.display='none';
+										document.getElementById('projectsContainerMedium').style.display='none';
+										document.getElementById('projectsContainerLarge').style.display='flex';
+										document.getElementById('smallIconSize').style.opacity='.2';
+										document.getElementById('mediumIconSize').style.opacity='.2';
+										document.getElementById('largeIconSize').style.opacity='1';
+										document.getElementById('smallIconSize').style.cursor='pointer';
+										document.getElementById('mediumIconSize').style.cursor='pointer';
+										document.getElementById('largeIconSize').style.cursor='auto'" 
+									style="opacity:.2" 
+									tabindex="11"
+									title="Large" 
+									>
+								</div>
+							</div>
+						</div>
 				
 					<div 
 						id="projectsContainerSmall" 
@@ -311,7 +326,7 @@
 
 					<div 
 						id="projectsContainerMedium" 
-						style="display:flex"
+						style="display:none"
 						>
 						<!-- Flex container for medium project links -->
 						<a 
@@ -369,7 +384,7 @@
 					
 					<div 
 						id="projectsContainerLarge" 
-						style="display:none"
+						style="display:flex"
 						>
 						<!-- Flex container for large project links -->
 						<a 

@@ -12,6 +12,7 @@ html {
 body {
 	background-image: url("../images/background.png");
 	background-repeat: repeat;
+	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 main {
@@ -92,7 +93,9 @@ input[type=submit]::-moz-focus-inner {
   border: 0;
 }
 
-
+.mt {
+	margin-top: 10px;
+}
 
 textarea {
     width: 98%;
@@ -220,12 +223,27 @@ textarea:focus {
 	display: grid;
   	grid-template-columns: repeat(12, 1fr);
   	justify-content: center;
-  	max-width: 98vw;
+  	max-width: 630px;
   	min-width: 385px;
   	margin: 4px auto;
   	grid-gap: 0px;
   	padding: 0px;
 	text-align: left;
+}
+
+.content-title-grid {
+	display: grid;
+  	grid-template-columns: repeat(12, 1fr);
+  	justify-content: center;
+  	max-width: 100%;
+  	min-width: 385px;
+  	margin: 0px auto;
+  	grid-gap: 0px;
+  	border-bottom: 3px #4E7271 solid;
+}
+
+.title-grid {
+	grid-area: 1 / 1 / 2 / -1;
 }
 
 .main-item-content {
@@ -376,15 +394,16 @@ textarea:focus {
 
 @media only screen and (min-width: 768px) {
     /* For tablets and small laptops: */
-
-	 html {
-		overflow: hidden;
-	}
-
+	 
 	.header-grid-container {
 		max-width: 760px;
 	}
 
+	.main-grid-container {
+		max-width: 760px;
+	}
+
+	/* The next 4 rearranges the nav bar */
 	.header-item-name {
 		grid-area: 1 / 1 / span 1 / span 5;
 		margin-bottom: 0px;
@@ -407,9 +426,15 @@ textarea:focus {
 		height: 50px;
 		margin: auto 0px;
 	}
+}
 
-	.main-grid-container {
-		max-width: 760px;
+@media only screen and (min-width: 980px) {
+    /* For large screens: */
+
+
+    /* these three make main item comtent scroll when it overflows */
+	html {
+		overflow: hidden;
 	}
 
 	.main-item-content {
@@ -427,10 +452,6 @@ textarea:focus {
 	    -webkit-overflow-scrolling: touch;
 	    -ms-overflow-style: none;
 	}
-}
-
-@media only screen and (min-width: 980px) {
-    /* For large screens: */
 
 	.header-grid-container {
 		max-width: 980px;
@@ -440,6 +461,7 @@ textarea:focus {
 		max-width: 980px;
 	}
 
+	/* Hides nav 3 (with drop down) and shows nav 4 (without drop down) */
 	.header-item-nav-3 {
 		display: none;
 	}
@@ -448,6 +470,7 @@ textarea:focus {
 		display: flex;
 	}
 
+	/* Positions the main item content and displays connect with me panel */
 	.main-item-content {
 		grid-area: 1 / 1 / 3 / 8;
 	}
