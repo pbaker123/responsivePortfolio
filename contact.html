@@ -1,4 +1,7 @@
-<!-- Contact Me -->
+<!-- Responsive Portfolio
+	small = up to 768
+	medium = up to 1024
+	large = over 1024 -->
 
 <!DOCTYPE html>
 
@@ -6,11 +9,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta 
-			content="width=device-width, initial-scale=1.0"
+			content="width=device-width, initial-scale=1.0 viewport-fit=cover"
 			name="viewport"
 			>
 		<title>
-			Let's Connect
+			Learn About Me
 		</title>
 		<link 
 			href="/apple-touch-icon.png"
@@ -28,7 +31,7 @@
 	    	rel="icon" 
 	    	sizes="16x16" 
 	    	type="image/png" 
-	    	>
+	   		>
 	    <link 
 	    	href="/site.webmanifest"
 	    	rel="manifest" 
@@ -55,7 +58,7 @@
 			href="assets/css/main.css"
 			rel="stylesheet" 
 			type="text/css" 
-			>	
+			>
 		<link 
 			href="assets/css/color.css"
 			rel="stylesheet" 
@@ -66,156 +69,222 @@
 			rel="stylesheet" 
 			type="text/css" 
 			>
-		<link 
-			href="assets/css/contact.css"
-			rel="stylesheet" 
-			type="text/css" 
-			>
+		
 	</head>
 	<body>
 		
-		<header>
-			<!-- Navigation bar area -->
-			<div class="headerArea">
+		<header class="bg-snow border-bottom">
+			<!-- Navigation bar -->
+			<div class="header-grid-container">
 				<a 
-					href="https://pbaker123.github.io/" 
+					class="header-item-name  bg-darkolivegreen text-snow rounded"
+					href="https://pbaker123.github.io"
+					tabindex="1" 
 					target="_blank"
 					>
-					<div 
-						class="portfolioTitle" 
-						title="View My Website"
-						>
-					<!-- Blue title section -->
-						<h1 class="verticalCenter">
-							Paul Baker
-						</h1>
-					</div>
+					<h1 class="extrapadding text-center">
+						Paul Baker
+					</h1>
 				</a>
-				<nav class="portfolioNavigation">
-					<!-- Navigation links -->
-					<ul>
-						<li title="Connect with me">
-							<a 
-								class="active"
-								href="contact.html" 
-								tabindex="-1"
-								>
-								Contact
-							</a>
-						</li>
-						<li title="View my work">
-							<a 
-								href="portfolio.html"
-								tabindex="2"
-								>
-								Portfolio
-							</a>
-						</li>
-						<li title="Learn about me">
-							<a 
-								href="index.html" 
-								tabindex="1"
-								>
-								About
-							</a>
-						</li>
-					</ul>
-				</nav>	
-			</div>
-		</header>
-
-		<section>
-			<!-- Main body area -->
-			<div class="contactContentArea">
-				<div class="clearFix">
-					<div class="contactFormArea">
-						<!-- Email form -->
-						<h2>
-							Contact
-						</h2>
-						<form>
-							<h4>Name</h4>
-							<input 
-								autofocus
-								name="name" 
-								placeholder="John Smith" 
-								tabindex="4" 
-								type="text" 
-								>
-							<h4>Email</h4>
-							<input 
-								name="email" 
-								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
-								placeholder="example@email.com" 
-								tabindex="5" 
-								type="email" 
-								>
-							<h4>Message</h4>
-  							<textarea 
-  								name="message" 
-  								tabindex="6"
-  								>
-  							</textarea>
- 							 <br>
- 							 <input type="submit" tabindex="7" value="Send">
-						</form>
+				
+				<div class="header-item-nav-1">
+					<div class="header-item-nav-flex">
+						<a 
+							class="link rounded"
+							href="index.html"
+							tabindex="2" 
+			  				>
+			  					<h5>
+									About
+								</h5>							
+							
+						</a>
 					</div>
-					<div class="contactConnectArea">
-						<!-- Social media links -->
-						<h3>
-							Connect with Me
-						</h3>
-						<ul>
-							<li 
-								class="connectSocial" 
-								title="Github"
-								>
-								<a 
-									href="https://github.com/pbaker123"
-									id="connectGithub"  
-									tabindex="8"
-									target="_blank" 
-									>
-								</a>
-							</li>
-							<li 
-								class="connectSocial" 
-								title="LinkedIn"
-								>
-								<a 
-									href="https://www.linkedin.com/in/paul-baker-03202b31/"
-									id="connectLinkedin"  
-									tabindex="9"
-									target="_blank" 
-									>
-								</a>
-							</li>
-							<li 
-								class="connectSocial" 
-								title="StackOverFlow"
-								>
-								<a 
-									href="https://stackoverflow.com/users/9519126/paul-baker" 
-									id="connectStackoverflow" href="https://stackoverflow.com/users/9519126/paul-baker" 
-									tabindex="10"
-									target="_blank" 
-									>
-								</a>
-							</li>
-						</ul>
+					
+				</div>
+				<div class="header-item-nav-2">
+					<div class="header-item-nav-flex">
+						<a 
+							class="link rounded"
+							href="portfolio.html"
+							tabindex="3" 
+			  				>
+			  					<h5>
+									Portfolio
+								</h5>							
+							
+						</a>
+					</div>
+					
+				</div>
+				<div class="header-item-nav-3">
+					<!-- Drop down connect with me box for small and medium screens -->
+					<div class="header-item-nav-flex">
+						<a 
+							class="text-maincolor splitlinkprimary currentpage"
+							href="contact.html"
+							tabindex="4" 
+			  				>
+			  				
+				  				<h5>
+									Contact
+								</h5>							
+						</a>
+						<button class="splitlinksecondary currentpage" tabindex="5">
+							<div class="dropdown">
+								<h5>
+			  						&#9660;
+			  					<h5>
+								<div class="dropdown-content">
+									<h4 class="text-maincolor content-border-bottom">
+										Connect with me
+									</h4>
+									<div class="socialSmallContainer">
+										<!-- First social media link -->
+										<a 
+											href="https://github.com/pbaker123"
+											tabindex="6"
+											target="_blank" 
+											>
+											<div class="gitHubSmallLink">
+											</div>
+										</a>
+								
+										<!-- Second social media link -->
+										<a
+											href="https://www.linkedin.com/in/paul-baker-03202b31/"
+											tabindex="7" 
+											target="_blank"
+											>
+											<div class="linkedinSmallLink">
+											</div>
+										</a>
+								
+										<!-- Third social media link -->
+										<a 
+											href="https://stackoverflow.com/users/9519126/paul-baker" 
+											tabindex="8"
+											target="_blank"
+											>
+											<div class="stackSmallLink">
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class="header-item-nav-4">
+					<!-- Contact link without a drop down for large screens -->
+					<div class="header-item-nav-flex">
+						<a 
+							class="link rounded currentpage"
+			  				>
+			  					<h5>
+									Contact
+								</h5>							
+							
+						</a>
 					</div>
 				</div>
 			</div>
-		</section>
+		</header>
+
+		<main>
+			<div class="main-grid-container">
+				<!-- Main content area -->
+				<div class="main-item-content">
+					<div class="main-item-flex">
+						<h2 class="content-border-bottom">
+							Contact me
+						</h2>
+						<div class="contactFormArea">
+						<!-- Email form -->
+							<form>
+								<p class="text-bold">Name</p>
+								<input 
+									autofocus
+									name="name" 
+									placeholder="John Smith" 
+									tabindex="4" 
+									type="text" 
+									>
+								<p class="text-bold">Email</p>
+								<input 
+									name="email" 
+									pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+									placeholder="example@email.com" 
+									tabindex="5" 
+									type="email" 
+									>
+								<p class="text-bold">Message</p>
+	  							<textarea 
+	  								name="message" 
+	  								tabindex="6"
+	  								>
+	  							</textarea>
+	 							 <br>
+	 							 <input class="text-bold" type="submit" tabindex="7" value="Send">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="main-item-connect">
+					<!-- Connect with me area for large screens -->
+					<h3 class="content-border-bottom">
+						Connect with me
+					</h3>
+						<div class="element-center">
+					<!-- First social media link -->
+					<a 
+						href="https://github.com/pbaker123" 
+						target="_blank"
+						>
+						<div class="gitHubLink">
+						</div>
+					</a>
+			
+					<!-- Second social media link -->
+					<a
+						href="https://www.linkedin.com/in/paul-baker-03202b31/"
+						target="_blank" 
+						>
+						<div class="linkedinLink">
+						</div>
+					</a>
+			
+					<!-- Third social media link -->
+					<a 
+						href="https://stackoverflow.com/users/9519126/paul-baker" 
+						target="_blank"
+						>
+							<div class="stackLink">
+							</div>
+					</a>
+				</div>
+				</div>
+			</div>
+		</main>
 
 		<footer>
-			<!-- Footer Area -->
-			<div class="footerLogo">
-			</div>
-			<p class="footerText">
-				Copyright &copy; 2018
-			</p>
+	  		<div class="container">
+	    		<div class="row">
+	    			<div class="col-sm-12">
+	    				<div class="text-center">
+	    					<img src="assets/images/pbd-sm.png">
+	    				</div>
+	    			</div>
+	    			<div class="col-sm-12">
+	    				<div class="text-center text-snow">
+	    					<small>
+	    						Copyright &copy; 2018
+	    					</small>
+	    				</div>
+	    			</div>
+	    		</div>
+	  		</div>
 		</footer>
-	
+		
 	</body>
 </html>

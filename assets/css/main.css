@@ -46,6 +46,68 @@ p {
 	padding: 1rem;
 }
 
+form {
+	overlow-x: none;
+}
+
+input[type="text"] {
+	width: 98%;
+	padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #4E7271;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus {
+	border: 1px solid #725342;
+}
+
+input[type="email"] {
+	width: 98%;
+	padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #4E7271;
+    border-radius: 5px;
+    position: relative;
+}
+
+input[type="email"]:focus {
+	border: 1px solid #725342;
+}
+
+input[type="email"]:invalid {
+	border-left: 3px solid #DD524A;
+}
+
+input[type=submit] {
+	border: none;
+    padding: 16px 32px;
+    margin: 0px auto;
+    cursor: pointer;
+    width: 98%;
+    border-radius: 5px;
+}
+
+input[type=submit]::-moz-focus-inner {
+  border: 0;
+}
+
+
+
+textarea {
+    width: 98%;
+    height: 150px;
+    padding: 12px 20px;
+    border: 1px solid #4E7271;
+    resize: none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+textarea:focus {
+	border: 1px solid #4AAAA5;
+}
+
 .header-grid-container {
 	display: grid;
   	grid-template-columns: repeat(12, 1fr);
@@ -60,12 +122,12 @@ p {
 }
 
 .header-item-name {
-	grid-area: 2 / 1 / 2 / -1;
-	margin-top: 5px;
+	grid-area: 1 / 1 / 2 / -1;
+	margin-bottom: 5px;
 }
 
 .header-item-nav-1 {
-	grid-area: 1 / 1 / span 1 / span 4;
+	grid-area: 2 / 1 / span 1 / span 4;
 	border-right: 1px #4E7271 solid;
 	display: flex;
 	justify-content: center;
@@ -73,14 +135,14 @@ p {
 }
 
 .header-item-nav-2 {
-	grid-area: 1 / 5 / span 1 / span 4;
+	grid-area: 2 / 5 / span 1 / span 4;
 	border-right: 1px #4E7271 solid;
 	display: flex;
 	justify-content: center;
 }
 
 .header-item-nav-3 {
-	grid-area: 1 / 9 / span 1 / span 4;
+	grid-area: 2 / 9 / span 1 / span 4;
 	display: flex;
 	justify-content: center;
 	}
@@ -154,8 +216,6 @@ p {
     display: block;    
 }
 
-
-
 .main-grid-container {
 	display: grid;
   	grid-template-columns: repeat(12, 1fr);
@@ -173,6 +233,7 @@ p {
 	display: flex;
 	padding: 10px;
 	border: 1px #4E7271 solid;
+	margin-bottom: 60px;
 }
 
 .main-item-flex {
@@ -213,6 +274,11 @@ p {
 
 .text-center {
 	text-align: center;
+}
+
+.text-bold {
+	font-weight: bold;
+	font-size: 1.4rem;
 }
 
 .socialSmallContainer {
@@ -321,7 +387,7 @@ p {
 
 	.header-item-name {
 		grid-area: 1 / 1 / span 1 / span 5;
-		margin-top: 0px;
+		margin-bottom: 0px;
 	}
 
 	.header-item-nav-1 {

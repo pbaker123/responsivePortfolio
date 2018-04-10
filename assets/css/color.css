@@ -1,10 +1,14 @@
 /* Background Colors */
 footer {
-	background-color: #a98f6a;
+	background-color: #A98f6A;
 }
 
 button {
 	background-color: unset;
+}
+
+input[type=submit] {
+	background-color: #BFA395;
 }
 
 .currentpage, .bg-darkolivegreen {
@@ -24,13 +28,13 @@ button {
 	background-color: #a98f6a;
 }
 
-.splitlinksecondary:focus, .splitlinksecondary:active {
+.splitlinksecondary:focus, .splitlinksecondary:active, input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active {
 	background-color: #725342;
 }
 
 
 /* Text Colors */
-body {
+body, p {
 	color: #233333;
 }
 
@@ -50,7 +54,7 @@ h2, h3, h4, .text-darkolivegreen {
 	color: #BFA395;
 }
 
-.currentpage, .link:hover, .link:focus, .link:active {
+.currentpage, .link:hover, .link:focus, .link:active, input[type=submit], input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active {
 	color: #FDFCFA !important;
 }
 
