@@ -4,11 +4,12 @@
 
 html { 
 	width: 100vw;
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
   	min-height: 100%;
 }
 
+/* Padding is to make safe space for iPhones */
 body {
 	background-image: url("../images/background.png");
 	background-repeat: repeat;
@@ -51,7 +52,7 @@ form {
 	overlow-x: none;
 }
 
-input[type="text"] {
+input[type="text"], input[type="email"], textarea  {
 	width: 98%;
 	padding: 12px 20px;
     margin-bottom: 20px;
@@ -59,20 +60,12 @@ input[type="text"] {
     border-radius: 5px;
 }
 
-input[type="text"]:focus {
-	border: 1px solid #725342;
+textarea {
+	height: 150px;
+   	resize: none;
 }
 
-input[type="email"] {
-	width: 98%;
-	padding: 12px 20px;
-    margin-bottom: 20px;
-    border: 1px solid #4E7271;
-    border-radius: 5px;
-    position: relative;
-}
-
-input[type="email"]:focus {
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 	border: 1px solid #725342;
 }
 
@@ -97,31 +90,63 @@ input[type=submit]::-moz-focus-inner {
 	margin-top: 10px;
 }
 
-textarea {
-    width: 98%;
-    height: 150px;
-    padding: 12px 20px;
-    border: 1px solid #4E7271;
-    resize: none;
-    margin-bottom: 20px;
-    border-radius: 5px;
+.body-grid, .header-grid-container, .main-grid-container, .content-title-grid {
+	display: grid;
+	
+	max-width: 634px;
+	min-width: 385px;
+	grid-gap: 0px;
 }
 
-textarea:focus {
-	border: 1px solid #4AAAA5;
+.body-grid {
+	grid-template-rows: auto;
+	align-content: center;
 }
 
 .header-grid-container {
-	display: grid;
-  	grid-template-columns: repeat(12, 1fr);
-  	justify-content: center;
-  	align-content: center;
-  	max-width: 634px;
-  	min-width: 385px;
+	grid-template-columns: repeat(12, 1fr);
+	align-content: center;
   	margin: 0px auto;
-  	grid-gap: 0px;
 	padding: 10px;
+}
 
+.main-grid-container {
+	grid-template-columns: repeat(12, 1fr);
+  	justify-content: center;
+  	margin: 4px auto;
+  	text-align: left;
+}
+
+.content-title-grid {
+	grid-template-columns: repeat(12, 1fr);
+  	justify-content: center;
+  	max-width: 100%;
+  	margin: 0px auto;
+  	border-bottom: 3px #4E7271 solid;
+}
+
+.title-grid {
+	grid-area: 1 / 1 / 2 / -1;
+}
+
+.body-header-grid {
+	grid-template-columns: auto repeat(3, 120px)
+}
+
+.body-header-pagetitle {
+	grid-area: 1 / 1 / 2/ 2;
+}
+
+.body-header-aboutlink {
+	grid-area: 1 / 2 / 2/ 3;
+}
+
+.body-header-portfoliolink {
+	grid-area: 1 / 3 / 2/ 4;
+}
+
+.body-header-contactlink {
+	grid-area: 1 / 4 / 2/ 5;
 }
 
 .header-item-name {
@@ -134,7 +159,6 @@ textarea:focus {
 	border-right: 1px #4E7271 solid;
 	display: flex;
 	justify-content: center;
-	height: 100%;
 }
 
 .header-item-nav-2 {
@@ -164,6 +188,27 @@ textarea:focus {
 	width: 80%;
 }
 
+.main-item-content {
+	grid-area: 1 / 1 / 3 / -1;
+	display: flex;
+	padding: 10px;
+	border: 1px #4E7271 solid;
+	margin-bottom: 60px;
+}
+
+.main-item-flex {
+	flex: 1;
+}
+
+.main-item-connect {
+	grid-area: 1 / 9 / 2 / -1;
+	display: none;
+	border: 1px #4E7271 solid;
+	height: auto;
+	padding: 4px;
+	flex-wrap: wrap;
+}
+
 .link {
 	text-align: center;
 	width: 100%;
@@ -172,8 +217,6 @@ textarea:focus {
 	margin: auto 0px;
 	line-height: 48px;
 }
-
-
 
 .splitlinkprimary {
 	text-align: center;
@@ -185,8 +228,6 @@ textarea:focus {
 	height: 48px;
 	line-height: 48px;
 }
-
-
 
 .splitlinksecondary {
     border: none;
@@ -217,54 +258,6 @@ textarea:focus {
 
 .splitlinksecondary:active .dropdown-content, .splitlinksecondary:focus .dropdown-content {
     display: block;    
-}
-
-.main-grid-container {
-	display: grid;
-  	grid-template-columns: repeat(12, 1fr);
-  	justify-content: center;
-  	max-width: 630px;
-  	min-width: 385px;
-  	margin: 4px auto;
-  	grid-gap: 0px;
-  	padding: 0px;
-	text-align: left;
-}
-
-.content-title-grid {
-	display: grid;
-  	grid-template-columns: repeat(12, 1fr);
-  	justify-content: center;
-  	max-width: 100%;
-  	min-width: 385px;
-  	margin: 0px auto;
-  	grid-gap: 0px;
-  	border-bottom: 3px #4E7271 solid;
-}
-
-.title-grid {
-	grid-area: 1 / 1 / 2 / -1;
-}
-
-.main-item-content {
-	grid-area: 1 / 1 / 3 / -1;
-	display: flex;
-	padding: 10px;
-	border: 1px #4E7271 solid;
-	margin-bottom: 60px;
-}
-
-.main-item-flex {
-	flex: 1;
-}
-
-.main-item-connect {
-	grid-area: 1 / 9 / 2 / -1;
-	display: none;
-	border: 1px #4E7271 solid;
-	height: auto;
-	padding: 4px;
-	flex-wrap: wrap;
 }
 
 .border-bottom {
@@ -304,82 +297,44 @@ textarea:focus {
 	margin-top: 10px;
 }
 
-.gitHubSmallLink {
+.gitHubSmallLink, .linkedinSmallLink, .stackSmallLink {
 	height: 40px;
 	width: 40px;
-	background-image: url('../images/github.png');
 	background-size: 40px;
 	border-radius: 5px;
 	margin: 6px;
 }
 
-.gitHubSmallLink:hover, .gitHubSmallLink:active, .gitHubSmallLink:focus {
+.gitHubLink, .linkedinLink, .stackLink {
+	height: 80px;
+	width: 80px;
+	background-size: contain;
+	border-radius: 5px;
+	margin: 6px;
+}
+
+.gitHubSmallLink, .gitHubLink {
+	background-image: url('../images/github.png');
+}
+
+.linkedinSmallLink, .linkedinLink {
+	background-image: url('../images/linkedin.png');
+}
+
+.stackSmallLink, .stackLink {
+	background-image: url('../images/stackoverflow.png');
+}
+
+.gitHubSmallLink:hover, .gitHubSmallLink:active, .gitHubSmallLink:focus, .gitHubLink:hover, .gitHubLink:active, .gitHubLink:focus {
 	background-image: url('../images/github2.png');
 }
 
-.linkedinSmallLink {
-	height: 40px;
-	width: 40px;
-	background-image: url('../images/linkedin.png');
-	background-size: 40px;
-	border-radius: 5px;
-	margin: 6px;
-}
 
-.linkedinSmallLink:hover, .linkedinSmallLink:active, .linkedinSmallLink:focus {
+.linkedinSmallLink:hover, .linkedinSmallLink:active, .linkedinSmallLink:focus, .linkedinLink:hover, .linkedinLink:active, .linkedinLink:focus {
 	background-image: url('../images/linkedin2.png');
 }
 
-.stackSmallLink {
-	height: 40px;
-	width: 40px;
-	background-image: url('../images/stackoverflow.png');
-	background-size: 40px;
-	border-radius: 5px;
-	margin: 6px;
-}
-
-.stackSmallLink:hover, .stackSmallLink:active, .stackSmallLink:focus {
-	background-image: url('../images/stackoverflow2.png');
-}
-
-.gitHubLink {
-	height: 80px;
-	width: 80px;
-	
-	background-image: url('../images/github.png');
-	background-size: contain;
-	border-radius: 5px;
-	margin: 6px;
-}
-
-.gitHubLink:hover, .gitHubLink:active, .gitHubLink:focus {
-	background-image: url('../images/github2.png');
-}
-
-.linkedinLink {
-	height: 80px;
-	width: 80px;
-	background-image: url('../images/linkedin.png');
-	background-size: contain;
-	border-radius: 5px;
-	margin: 6px;
-}
-
-.linkedinLink:hover, .linkedinLink:active, .linkedinLink:focus {
-	background-image: url('../images/linkedin2.png');
-}
-
-.stackLink {
-	height: 80px;
-	width: 80px;
-	background-image: url('../images/stackoverflow.png');
-	background-size: contain;
-	border-radius: 5px;
-	margin: 6px;
-}
-
-.stackLink:hover, .stackLink:active, .stackLink:focus {
+.stackSmallLink:hover, .stackSmallLink:active, .stackSmallLink:focus, .stackLink:hover, .stackLink:active, .stackLink:focus {
 	background-image: url('../images/stackoverflow2.png');
 }
 
@@ -395,11 +350,7 @@ textarea:focus {
 @media only screen and (min-width: 768px) {
     /* For tablets and small laptops: */
 	 
-	.header-grid-container {
-		max-width: 760px;
-	}
-
-	.main-grid-container {
+	.header-grid-container, .main-grid-container {
 		max-width: 760px;
 	}
 
@@ -453,11 +404,7 @@ textarea:focus {
 	    -ms-overflow-style: none;
 	}
 
-	.header-grid-container {
-		max-width: 980px;
-	}
-
-	.main-grid-container {
+	.header-grid-container,.main-grid-container {
 		max-width: 980px;
 	}
 
