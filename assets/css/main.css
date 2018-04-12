@@ -12,11 +12,10 @@ html {
 body {
 	background-image: url("../images/background.png");
 	background-repeat: repeat;
-	/* Padding is to make safe space for iPhones */
-	
 }
 
 header, main {
+	/* Padding is to make safe space for iPhones */
 	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
